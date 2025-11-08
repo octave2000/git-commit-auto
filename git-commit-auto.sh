@@ -103,9 +103,9 @@ if [ -z "$COMMIT_MESSAGE" ]; then
     exit 1
 fi
 
-echo "💬 Generated Message: $COMMIT_MESSAGE"
-echo "🚀 Committing..."
+echo "Generated Message: $COMMIT_MESSAGE"
+echo "Committing..."
 
 git commit -m "$COMMIT_MESSAGE"
 
-echo "✅ Commit successful!"
+echo "Commit successful!"
