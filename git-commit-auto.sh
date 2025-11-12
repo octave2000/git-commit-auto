@@ -2,20 +2,7 @@
 #
 # git-commit-auto
 #
-# Generates a commit message using the Gemini API based on staged changes
-# and performs the commit.
-#
-# Dependencies:
-# - curl: For making API requests.
-# - jq: For parsing JSON responses.
-# - git: For obvious reasons.
-#
-# Setup:
-# 1. Place this script in your PATH (e.g., /usr/local/bin/git-commit-auto).
-# 2. Make it executable: chmod +x /usr/local/bin/git-commit-auto
-# 3. Set your API key as an environment variable:
-#    export GEMINI_API_KEY="YOUR_API_KEY_HERE"
-#    (Add this to your ~/.bashrc or ~/.zshrc)
+
 
 set -e
 set -o pipefail
