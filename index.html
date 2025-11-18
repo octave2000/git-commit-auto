@@ -31,7 +31,7 @@
                             ],
                         },
                         colors: {
-                            brand: "#ea580c", // A deep, technical orange
+                            brand: "#ea580c", // Deep technical orange
                             neutral: {
                                 50: "#fafafa",
                                 100: "#f5f5f5",
@@ -65,7 +65,7 @@
                     git-commit-auto<span class="text-brand">.sh</span>
                 </div>
                 <a
-                    href="https://github.com/yourusername/git-commit-auto"
+                    href="https://github.com/bonheur15/git-commit-auto"
                     class="text-sm font-medium hover:text-brand transition-colors"
                 >
                     GitHub
@@ -81,7 +81,7 @@
                             class="inline-block px-3 py-1 mb-6 border border-neutral-200 rounded-full bg-white"
                         >
                             <span class="text-xs font-mono text-neutral-500"
-                                >v1.0.0 Release</span
+                                >v1.0.0 Stable</span
                             >
                         </div>
                         <h1
@@ -107,8 +107,8 @@
                             <div
                                 class="flex items-center px-6 py-4 bg-white border border-neutral-200 rounded-lg font-mono text-sm text-neutral-500"
                             >
-                                <span class="text-brand mr-2">$</span> npm i -g
-                                git-commit-auto
+                                <span class="text-brand mr-2">$</span> git
+                                commit-auto
                             </div>
                         </div>
                     </div>
@@ -147,26 +147,27 @@
                                 <div class="flex">
                                     <span class="text-brand mr-3">$</span>
                                     <span class="text-white"
-                                        >git commit-auto</span
+                                        >git commit-auto push</span
                                     >
                                 </div>
                                 <div class="mt-4 text-neutral-500">
-                                    Analyzing 4 files...
+                                    Analyzing diff...
                                 </div>
                                 <div class="mt-2 text-brand">
-                                    Detected: Auth System Refactor
+                                    Generating Conventional Commit...
                                 </div>
                                 <div class="mt-4">
                                     <span class="text-green-400"
-                                        >feat(auth): implement JWT rotation and
-                                        refresh tokens</span
+                                        >feat(api): integrate Gemini AI for
+                                        auto-commits</span
                                     >
                                 </div>
                                 <div class="mt-2 opacity-50">
-                                    [main 8a2b9c] feat(auth): implement JWT
-                                    rotation...<br />
-                                    4 files changed, 120 insertions(+), 12
-                                    deletions(-)
+                                    [main 8a2b9c] feat(api): integrate Gemini
+                                    AI...<br />
+                                    3 files changed, 45 insertions(+)<br />
+                                    Enumerating objects: 5, done.<br />
+                                    To github.com:user/repo.git
                                 </div>
                             </div>
                         </div>
@@ -175,14 +176,34 @@
             </div>
         </section>
 
+        <div class="bg-neutral-100 border-b border-neutral-200 py-4 px-6">
+            <div
+                class="max-w-6xl mx-auto flex flex-wrap gap-8 items-center text-xs font-mono uppercase tracking-widest text-neutral-500"
+            >
+                <span class="font-bold text-neutral-900">Dependencies:</span>
+                <div class="flex items-center gap-2">
+                    <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                    git
+                </div>
+                <div class="flex items-center gap-2">
+                    <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                    curl
+                </div>
+                <div class="flex items-center gap-2">
+                    <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                    jq
+                </div>
+            </div>
+        </div>
+
         <section class="py-24 px-6 bg-white">
             <div class="max-w-6xl mx-auto">
                 <div class="mb-16">
                     <h2 class="text-3xl font-bold tracking-tight mb-4">
-                        Engineered for flow state.
+                        Three modes. Total control.
                     </h2>
                     <p class="text-neutral-500">
-                        Minimal configuration. Maximum output.
+                        Streamline your workflow with these simple commands.
                     </p>
                 </div>
 
@@ -192,93 +213,55 @@
                     <div
                         class="p-10 border-r border-b border-neutral-200 hover:bg-neutral-50 transition-colors duration-300 group"
                     >
-                        <div
-                            class="w-10 h-10 bg-neutral-100 text-neutral-900 flex items-center justify-center rounded mb-6 group-hover:bg-brand group-hover:text-white transition-colors"
-                        >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="20"
-                                height="20"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            >
-                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
-                            </svg>
+                        <div class="font-mono text-xs text-brand mb-4">
+                            01 — STANDARD
                         </div>
-                        <h3 class="font-bold text-lg mb-2">Zero Latency</h3>
-                        <p class="text-neutral-500 text-sm leading-relaxed">
-                            Powered by Gemini Flash. Generates context-aware
-                            messages faster than you can type "fix typo".
-                        </p>
-                    </div>
-
-                    <div
-                        class="p-10 border-r border-b border-neutral-200 hover:bg-neutral-50 transition-colors duration-300 group"
-                    >
-                        <div
-                            class="w-10 h-10 bg-neutral-100 text-neutral-900 flex items-center justify-center rounded mb-6 group-hover:bg-brand group-hover:text-white transition-colors"
+                        <code
+                            class="block bg-neutral-900 text-white p-3 rounded mb-4 font-mono text-sm"
+                            >$ git commit-auto</code
                         >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="20"
-                                height="20"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            >
-                                <path
-                                    d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
-                                ></path>
-                                <polyline points="14 2 14 8 20 8"></polyline>
-                                <line x1="16" y1="13" x2="8" y2="13"></line>
-                                <line x1="16" y1="17" x2="8" y2="17"></line>
-                                <polyline points="10 9 9 9 8 9"></polyline>
-                            </svg>
-                        </div>
                         <h3 class="font-bold text-lg mb-2">
-                            Conventional Spec
+                            Generate & Commit
                         </h3>
                         <p class="text-neutral-500 text-sm leading-relaxed">
-                            Strict adherence to Conventional Commits. Your
-                            changelogs will finally look professional.
+                            Replaces <code>git commit -m</code>. Generates a
+                            message based on staged changes and commits it
+                            locally.
                         </p>
                     </div>
 
                     <div
                         class="p-10 border-r border-b border-neutral-200 hover:bg-neutral-50 transition-colors duration-300 group"
                     >
-                        <div
-                            class="w-10 h-10 bg-neutral-100 text-neutral-900 flex items-center justify-center rounded mb-6 group-hover:bg-brand group-hover:text-white transition-colors"
-                        >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="20"
-                                height="20"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            >
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <line x1="2" y1="12" x2="22" y2="12"></line>
-                                <path
-                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
-                                ></path>
-                            </svg>
+                        <div class="font-mono text-xs text-brand mb-4">
+                            02 — DEPLOY
                         </div>
-                        <h3 class="font-bold text-lg mb-2">One Flag Push</h3>
+                        <code
+                            class="block bg-neutral-900 text-white p-3 rounded mb-4 font-mono text-sm"
+                            >$ git commit-auto push</code
+                        >
+                        <h3 class="font-bold text-lg mb-2">Commit & Push</h3>
                         <p class="text-neutral-500 text-sm leading-relaxed">
-                            Run <code>git commit-auto push</code> to stage,
-                            commit, and push in a single keystroke.
+                            Generates the message, creates the commit, and
+                            immediately pushes to your remote branch in one go.
+                        </p>
+                    </div>
+
+                    <div
+                        class="p-10 border-r border-b border-neutral-200 hover:bg-neutral-50 transition-colors duration-300 group"
+                    >
+                        <div class="font-mono text-xs text-brand mb-4">
+                            03 — FIX
+                        </div>
+                        <code
+                            class="block bg-neutral-900 text-white p-3 rounded mb-4 font-mono text-sm"
+                            >$ git commit-auto regenerate</code
+                        >
+                        <h3 class="font-bold text-lg mb-2">Amend & Retry</h3>
+                        <p class="text-neutral-500 text-sm leading-relaxed">
+                            Not happy with the AI's output? This generates a
+                            fresh message and amends the previous commit
+                            instantly.
                         </p>
                     </div>
                 </div>
@@ -294,72 +277,98 @@
                         <h2
                             class="text-3xl font-bold tracking-tight text-neutral-900"
                         >
-                            Get Started
+                            Installation
                         </h2>
                         <p class="text-neutral-500 mt-2">
-                            Requires a free Google Gemini API key.
+                            Setup takes less than 2 minutes.
                         </p>
                     </div>
                 </div>
 
                 <div class="space-y-8">
-                    <div class="flex gap-6">
+                    <div class="flex gap-6 group">
                         <div
-                            class="flex-shrink-0 w-8 h-8 rounded bg-black text-white flex items-center justify-center font-mono text-sm"
+                            class="flex-shrink-0 w-8 h-8 rounded bg-neutral-200 group-hover:bg-brand group-hover:text-white transition-colors flex items-center justify-center font-mono text-sm font-bold"
                         >
                             1
                         </div>
                         <div class="w-full">
-                            <h3 class="font-bold text-lg">Get your API Key</h3>
+                            <h3 class="font-bold text-lg">
+                                Get a Gemini API Key
+                            </h3>
                             <p class="text-sm text-neutral-500 mb-3">
-                                Visit Google AI Studio to grab a free key.
+                                Go to Google AI Studio or Cloud Console to
+                                generate your key.
                             </p>
                             <a
                                 href="https://aistudio.google.com/app/apikey"
                                 target="_blank"
                                 class="text-sm font-medium text-brand underline hover:text-orange-700"
                             >
-                                aistudio.google.com &rarr;
+                                Get API Key &rarr;
                             </a>
                         </div>
                     </div>
 
-                    <div class="flex gap-6">
+                    <div class="flex gap-6 group">
                         <div
-                            class="flex-shrink-0 w-8 h-8 rounded bg-black text-white flex items-center justify-center font-mono text-sm"
+                            class="flex-shrink-0 w-8 h-8 rounded bg-neutral-200 group-hover:bg-brand group-hover:text-white transition-colors flex items-center justify-center font-mono text-sm font-bold"
                         >
                             2
                         </div>
                         <div class="w-full">
-                            <h3 class="font-bold text-lg">Export Variable</h3>
+                            <h3 class="font-bold text-lg">
+                                Set Environment Variable
+                            </h3>
                             <p class="text-sm text-neutral-500 mb-3">
-                                Add this to your .zshrc or .bashrc
+                                Add this to your shell config
+                                (<code>~/.bashrc</code>, <code>~/.zshrc</code>,
+                                etc).
                             </p>
                             <div
-                                class="bg-neutral-100 border border-neutral-200 rounded p-4 font-mono text-sm text-neutral-700 overflow-x-auto"
+                                class="bg-neutral-100 border border-neutral-200 rounded p-4 font-mono text-sm text-neutral-700 overflow-x-auto whitespace-pre"
                             >
-                                export GEMINI_API_KEY="your-key-here"
+                                export GEMINI_API_KEY="YOUR_API_KEY_HERE"
                             </div>
+                            <p class="text-xs text-neutral-400 mt-2">
+                                Remember to reload your shell after adding this.
+                            </p>
                         </div>
                     </div>
 
-                    <div class="flex gap-6">
+                    <div class="flex gap-6 group">
                         <div
-                            class="flex-shrink-0 w-8 h-8 rounded bg-black text-white flex items-center justify-center font-mono text-sm"
+                            class="flex-shrink-0 w-8 h-8 rounded bg-neutral-200 group-hover:bg-brand group-hover:text-white transition-colors flex items-center justify-center font-mono text-sm font-bold"
                         >
                             3
                         </div>
                         <div class="w-full">
-                            <h3 class="font-bold text-lg">Install Script</h3>
+                            <h3 class="font-bold text-lg">
+                                Install the Script
+                            </h3>
                             <p class="text-sm text-neutral-500 mb-3">
-                                Download and move to your bin folder.
+                                Download, make executable, and move to your
+                                path.
                             </p>
                             <div
-                                class="bg-neutral-100 border border-neutral-200 rounded p-4 font-mono text-sm text-neutral-700 overflow-x-auto"
+                                class="bg-neutral-900 text-neutral-300 border border-neutral-800 rounded p-4 font-mono text-sm overflow-x-auto flex flex-col"
                             >
+                                <span class="text-neutral-500"
+                                    ># 1. Download the file (example)</span
+                                >
                                 curl -L
-                                https://raw.githubusercontent.com/user/repo/main/install.sh
-                                | bash
+                                https://raw.githubusercontent.com/bonheur15/git-commit-auto/main/git-commit-auto.sh
+                                -o git-commit-auto
+
+                                <span class="text-neutral-500"
+                                    ># 2. Make executable</span
+                                >
+                                chmod +x git-commit-auto
+
+                                <span class="text-neutral-500"
+                                    ># 3. Move to PATH</span
+                                >
+                                sudo mv git-commit-auto /usr/local/bin/
                             </div>
                         </div>
                     </div>
@@ -369,10 +378,10 @@
                     class="mt-16 pt-16 border-t border-neutral-200 text-center"
                 >
                     <a
-                        href="https://github.com"
-                        class="inline-block text-2xl font-bold hover:text-brand transition-colors"
+                        href="https://github.com/bonheur15/git-commit-auto"
+                        class="inline-block px-6 py-3 border border-neutral-300 rounded-lg font-bold hover:border-brand hover:text-brand transition-colors"
                     >
-                        Read the Docs on GitHub &rarr;
+                        View Source on GitHub
                     </a>
                 </div>
             </div>
@@ -383,7 +392,10 @@
                 class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm text-neutral-400"
             >
                 <p>&copy; 2025 git-commit-auto.</p>
-                <p class="font-mono">MIT License</p>
+                <div class="flex gap-4 font-mono">
+                    <span>MIT License</span>
+                    <span>v1.0.0</span>
+                </div>
             </div>
         </footer>
     </body>
