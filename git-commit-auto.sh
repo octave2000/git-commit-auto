@@ -127,15 +127,15 @@ main() {
         # Get the diff from the last commit
         local git_diff
         git_diff=$(git diff HEAD~1..HEAD)
-        
+
         local new_commit_message
         new_commit_message=$(generate_commit_message "$git_diff")
-        
+
         echo "Generated Message: $new_commit_message"
         echo "Amending previous commit..."
-        
+
         git commit --amend -m "$new_commit_message"
-        
+
         echo "Commit amended successfully!"
     else
         # Default behavior: create a new commit from staged changes
@@ -146,7 +146,7 @@ main() {
             echo "No staged changes found. Did you forget to 'git add'?"
             exit 0
         fi
-        
+
         local commit_message
         commit_message=$(generate_commit_message "$git_diff")
 
