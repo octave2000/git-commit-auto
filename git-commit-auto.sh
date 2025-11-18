@@ -76,7 +76,7 @@ generate_commit_message() {
             }
         }')
 
-    echo "Contacting Gemini to generate commit message..."
+
 
     local response
     local max_retries=3
@@ -90,13 +90,12 @@ generate_commit_message() {
             break
         fi
 
-        echo "Warning: API call failed or returned an unexpected response. Retrying in ${retry_delay}s..."
-        echo "Response: $response"
+        echo "Warning: Gemini API call failed. Retrying in ${retry_delay}s..." >&2
         sleep $retry_delay
         retry_delay=$((retry_delay * 2))
 
         if [ $i -eq $((max_retries - 1)) ]; then
-            echo "Error: Max retries reached. Failed to get a response from Gemini."
+            echo "Error: Failed to get a response from Gemini after multiple retries." >&2
             exit 1
         fi
     done
@@ -109,8 +108,7 @@ generate_commit_message() {
     )
 
     if [ -z "$commit_message" ]; then
-        echo "Error: Failed to parse a valid commit message from the AI response."
-        echo "Raw Response: $response"
+        echo "Error: Failed to parse a valid commit message from Gemini's response." >&2
         exit 1
     fi
 
@@ -123,7 +121,7 @@ main() {
     check_dependencies
 
     if [ "$1" == "regenerate" ]; then
-        echo "Regenerating last commit message..."
+
         # Get the diff from the last commit
         local git_diff
         git_diff=$(git diff HEAD~1..HEAD)
