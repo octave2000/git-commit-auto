@@ -4,6 +4,10 @@ This script, `git-commit-auto`, automatically generates a conventional commit me
 
 This allows you to run `git commit-auto` instead of `git commit -m "..."`.
 
+![compare](https://github.com/user-attachments/assets/242b556f-5774-49c2-a482-e4ac707f8b2b)
+
+
+
 ## Dependencies
 
 
